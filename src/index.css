@@ -451,28 +451,11 @@ overflow: hidden;
 display: flex;
 gap: 0.5rem;
 }
-.card_btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  #heart-icon {
+    color: red;
   }
-  .card_btn svg {
-  height: 2rem;
-  width: 2rem;
-  stroke: var(--text); 
-  stroke-width: 1.5px;
-  }
-  
-  .card__btn--like svg {
-  stroke: var(--like);
-  fill: var(--like);
-  }
-  .red {
-    color: #a31521;
+  #void-heart-icon {
+    color: whitesmoke;
   }
   .social-media-buttons {
     height: 100px;
