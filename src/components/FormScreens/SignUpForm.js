@@ -40,7 +40,11 @@ const SignUpForm = () => {
   return (
     <div className='login-container'>
       <form action='' className='login-form'>
-        <h1 className='login-title'>Sign Up</h1>
+        <div className='login-header-section'>
+          <h1 className='login-title'>Create account</h1>
+          <p className='login-text'>Enter your personal information below</p>
+        </div>
+
         {loading && <Loader />}
 
         <div className='input-group'>
@@ -117,8 +121,16 @@ const SignUpForm = () => {
           type='submit'
           onClick={handleSignupSubmit}
           className='submit-button'
-          value='Sign In'
+          value='Sign up'
         />
+        <p style={{ marginTop: '3rem' }}>
+          Already have an account?{' '}
+          <span>
+            <a href='/' style={{ color: '#4caf50' }}>
+              Sign in
+            </a>
+          </span>
+        </p>
       </form>
     </div>
   )

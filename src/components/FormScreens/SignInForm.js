@@ -4,8 +4,10 @@ const SignInForm = () => {
   return (
     <div className='login-container'>
       <form action='' className='login-form'>
-        <h1 className='login-title'>Sign In</h1>
-
+        <div className='login-header-section'>
+          <h1 className='login-title'>Login</h1>
+          <p className='login-text'>Enter your personal information below</p>
+        </div>
         <div className='input-group'>
           <input
             type='text'
@@ -31,9 +33,12 @@ const SignInForm = () => {
         </div>
 
         <input type='submit' className='submit-button' value='Sign In' />
-        <p>
-          Don't have an account? why not <a href='/signup'>register</a> real
-          quick!
+        <p style={{ marginTop: '3rem' }}>
+          Don't have an account? why not{' '}
+          <a href='/signup' style={{ color: '#4caf50' }}>
+            register
+          </a>{' '}
+          real quick!
         </p>
       </form>
     </div>
